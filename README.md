@@ -9,6 +9,11 @@ The ChatGPT API module is designed to help developers create chatbots quickly an
 4. **embed/bot:** This feature allows you to make an embed of your text or content. It can be useful for deep learning or machine learning applications.
 5. **moderation:** This feature allows you to secure your text by reading it and identifying harmful words.
 
+## Installation
+run command below into cmd or terminal to install the package
+```
+pip install open-ai-chat-bot-maker==1.0
+```
 ## Requipment
 To use this module, you will need to have an OpenAI API key. Once you have obtained the key, you can use the features of the module to develop your chatbot.
 > you can get your own api key in [openai](https://platform.openai.com/account/api-keys) website. (login needed)
