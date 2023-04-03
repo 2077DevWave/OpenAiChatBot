@@ -2,6 +2,12 @@
 
 The ChatGPT API module is designed to help developers create chatbots quickly and easily using the OpenAI API key. It provides several features to develop a chatbot, including text editing, image creation, embedding, and moderation. Additionally, it includes an auto-debugging feature to help you debug your code.
 
+## Installation
+run command below into command prompt or terminal to install module in your computer
+```
+pip install OpenAiChatBot
+```
+
 ## Features
 1. **chat/bot:** This feature allows you to chat with your bot using the OpenAI API. The bot will answer your questions based on your previous messages.
 2. **Edit/bot:** This feature allows you to edit your text and code easily with a description.
@@ -16,17 +22,12 @@ To use this module, you will need to have an OpenAI API key. Once you have obtai
 also you need to install following module to chatbot work correctly:
 1. **openai :** chatgpt
 
-> if you want to install requipment automatically run the following code in terminal (cmd):
-```
-pip install openai
-```
-OR
-```
-pip3 install openai
-```
+> if you want to install requipment automatically install module with pip
+
 ## Usage
 to develope your chatbot at first you need to create an object from ChatGPT class like this:
 ```python
+from OpenAiChatBot import ChatGPT
 chatbot = ChatGPT(api_key='YOUR_API_KEY')
 ```
 
@@ -68,8 +69,11 @@ ChatGPT(api_key='YOUR_API_KEY').Demo.moderation()
 Here's an example of how you can use the `chat/bot` feature to chat with your bot:
 
 ```python
+###### import class from package ######
+from OpenAiChatBot import ChatGPT
+
 ###### make an object to use chat features ######
-chat = ChatGPT.chat()
+chat = ChatGPT('YOU_API_KEY_HERE').chat()
 
 ###### to make a loading just for beauty :) ######
 loading = ChatGPT.show.loader()
